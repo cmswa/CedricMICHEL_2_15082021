@@ -174,6 +174,7 @@ header h3 {
   /*background: rgb(179, 173, 90);*/
   height: 190px;
   width: 100%;
+  margin-bottom: 35px;
   /*align-content:space-around*/
 }
 
@@ -364,3 +365,83 @@ li:nth-child(2) {
 /**************************************************
              Section    -    Article
 ***************************************************/
+
+section article {
+  width: 67%;
+  height: 625px;
+  background: #f2f2f2;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+section article h2 {
+  width: 100%;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+/*faire ul en 2 parties*/
+
+section article ul {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 0 25px 0 25px;
+  /*height: 30%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-left: 0;
+margin: auto;*/
+}
+
+section article li {
+  width: 29%;
+  height: 45%;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3px 0 0 5px;
+}
+
+section article figure {
+  height: 120px;
+  width: 98%;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+section article li img {
+  border-radius: 25px 25px 0 0;
+  max-width: 100%;
+  /*min-height: -webkit-fill-available;
+  overflow: hidden;*/
+  min-height: 100%;
+  object-fit: cover;
+}
+
+section article li img:nth-child(2) {
+}
+
+section article li figcaption {
+}
+
+section article em {
+  display: flex;
+}
+
+section aside {
+  width: 25%;
+  display: flex;
+  height: 625px;
+  background: #f2f2f2;
+  border-radius: 25px;
+  margin-left: 40px;
+}
