@@ -374,6 +374,10 @@ li:nth-child(2) {
 /*********************************************************
         Section    -    Article    <--  Hébergements
 **********************************************************/
+section {
+  display: flex;
+  justify-content: space-between;
+}
 
 section article {
   width: 67%;
@@ -383,7 +387,7 @@ section article {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 section article h2 {
@@ -466,10 +470,6 @@ section article .stars {
   padding-top: 5px;
 }
 
-/*************************************************************
-     Section    -    Aside      <--  Les plus populaires 
-**************************************************************/
-
 section article em {
   display: flex;
   font-size: 1.2rem;
@@ -477,13 +477,19 @@ section article em {
   padding-top: 28px;
 }
 
+/*************************************************************
+     Section    -    Aside      <--  Les plus populaires 
+**************************************************************/
+
 section aside {
-  width: 25%;
+  margin-top: 30px;
+  width: 29%;
   display: flex;
+  flex-direction: column;
+  align-content: space-around;
   height: 625px;
   background: #f2f2f2;
   border-radius: 25px;
-  margin-left: 40px;
 }
 
 /**********************************************************
