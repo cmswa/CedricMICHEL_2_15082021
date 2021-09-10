@@ -522,6 +522,7 @@ aside li {
   /*padding: 0 0 0 5px;
 margin-top: 7px;*/
   box-shadow: 0px 0px 20px 3px #d3d3d3;
+  align-content: flex-start;
 }
 
 aside figure {
@@ -530,32 +531,35 @@ aside figure {
 }
 
 aside li img {
-  max-width: 38%;
-  max-height: 100%;
+  max-width: 38%; /*width: 120px;*/
+  height: 131px; /* <-- pour google chrome ou height: 135px; pour firefox */
+  position: relative;
+  padding: 5px;
   border-radius: 25px 0 0 25px;
   object-fit: cover;
+}
 
-  /* max-width: 100%;
-  min-height: 88%;
-  object-fit: cover;*/
+aside li:nth-child(3) img {
+  width: 150px;
 }
 
 aside figcaption {
   display: flex;
   flex-direction: row;
   padding: 5%;
-  font-size: 0.8rem;
 }
 
-.description_pop {
-  display: flex;
-  flex-direction: column;
-  padding-left: 40%;
+aside p {
+  padding-left: 46%;
+  margin-top: -85px;
+  font-size: 0.9rem;
 }
 
 aside .stars {
   font-size: 0.8rem;
   display: flex;
+  padding-left: 46%;
+  padding-top: 25px;
 }
 
 /**********************************************************
