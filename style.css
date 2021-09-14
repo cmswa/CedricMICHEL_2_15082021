@@ -621,9 +621,9 @@ figure#parc_calanques {
 }
 
 #parc_calanques img {
-  object-fit: cover;
-  object-position: 55% 0;
-  filter: brightness(1.1);
+  object-fit: none;
+  object-position: 50% 0%;
+  filter: brightness(1.2) contrast(1.2) opacity(0.8) saturate(1.2);
 }
 
 #fort_pomegues {
