@@ -139,10 +139,14 @@ header img {
 
 nav {
   display: flex;
-  justify-content: space-between;
   width: 410px;
   align-items: center;
+  margin-right: 55px;
   /*background-color: rgb(201, 165, 136);*/
+}
+
+a.nav {
+  padding: 40px 30px;
 }
 
 /*
@@ -169,7 +173,6 @@ header h3 {
   position: relative;
   bottom: 1px;
   color: #0065fc;
-  padding-top: 35px;
 }
 
 .blue {
