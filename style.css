@@ -256,7 +256,7 @@ input::placeholder {
   margin-left: -12px;
 }
 
-li:nth-child(2) {
+#filtres li:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,28 +718,28 @@ figure#parc_calanques {
 /**********************************************************
                         Footer 
 **********************************************************/
-/* remplacer px -> % */
 footer {
-  width: 108%;
-  /* margin: auto; */
-  position: relative;
-  right: 4%;
+  width: 1450px;
+  margin: auto;
+
   height: 225px;
   display: flex;
   background: #f2f2f2;
-  align-items: center;
-  /* justify-content: space-between;*/
 }
 
 .footer_p {
   display: flex;
   flex-direction: column;
-  padding-right: 200px;
+  padding-right: 15%;
+  padding-top: 1%;
 }
 
 footer em {
-  padding: 30px 0 0 40px;
+  font-size: 1.1rem;
+  padding: 30px 0 0 47px;
 }
 
-.footer_p :last-child {
+footer li {
+  font-size: 1rem;
+  padding: 7px;
 }
