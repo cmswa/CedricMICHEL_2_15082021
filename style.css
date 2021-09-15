@@ -380,14 +380,14 @@ li:nth-child(2) {
 }
 
 /*********************************************************
-        Section    -    Article    <--  Hébergements
+  <div id="populaires">    -    Article    <--  Hébergements
 **********************************************************/
-#hergements_populaires {
+#hebergements {
   display: flex;
   justify-content: space-between;
 }
 
-section article {
+#hebergements article {
   width: 67%;
   height: 625px;
   background: #f2f2f2;
@@ -398,7 +398,7 @@ section article {
   margin-top: 30px;
 }
 
-section article h2 {
+#hebergements article h2 {
   width: 100%;
   display: flex;
   font-size: 1.4rem;
@@ -409,7 +409,7 @@ section article h2 {
 
 /*faire ul en 2 parties*/
 
-section article ul {
+#hebergements article ul {
   height: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -426,7 +426,7 @@ padding-left: 0;
 margin: auto;*/
 }
 
-section article li {
+#hebergements article li {
   width: 29%;
   height: 46%;
   background: white;
@@ -441,7 +441,7 @@ section article li {
   box-shadow: 0px 0px 20px 3px #d3d3d3;
 }
 
-section article figure {
+#hebergements article figure {
   height: 120px;
   width: 98%;
   display: flex;
@@ -451,7 +451,7 @@ section article figure {
   margin-bottom: 12px;
 }
 
-section article li img {
+#hebergements article li img {
   border-radius: 25px 25px 0 0;
   max-width: 100%;
   /*min-height: -webkit-fill-available;
@@ -460,25 +460,25 @@ section article li img {
   object-fit: cover;
 }
 
-section article li figcaption {
+#hebergements article li figcaption {
   padding: 8px 0 8px 15px;
 }
 
-section article ul p {
+#hebergements article ul p {
   font-size: 0.9rem;
   padding-left: 15px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
-section article .stars {
+#hebergements article .stars {
   padding-left: 15px;
   font-size: 0.8rem;
   display: flex;
   padding-top: 5px;
 }
 
-section article em {
+#hebergements article em {
   display: flex;
   font-size: 1.2rem;
   padding-left: 44px;
@@ -489,7 +489,7 @@ section article em {
      Section    -    Aside      <--  Les plus populaires 
 **************************************************************/
 
-section aside {
+aside {
   margin-top: 30px;
   width: 30%;
   display: flex;
@@ -571,7 +571,7 @@ aside .stars {
 }
 
 /**********************************************************
-                 Section       <--  Activités 
+          <div id="populaires">       <--  Activités 
 **********************************************************/
 
 #activity {
