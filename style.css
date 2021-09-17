@@ -602,16 +602,34 @@ aside .stars {
   border: 1px white;
 }
 
-figure#vieux_port,
+/*figure#vieux_port,
 figure#parc_calanques {
-  /*height: 450px;*/
+  height: 100%;
+}*/
+
+figure.big_activity {
   height: 100%;
 }
 
-#vieux_port img,
+figure.big_fort {
+  height: 100%;
+}
+
+.big_fort img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+/*#vieux_port img,
 #parc_calanques img {
   width: 100%;
-  /*height: 390px;*/
+  height: 100%;
+}*/
+
+.big_activity img {
+  width: 100%;
   height: 100%;
 }
 
@@ -626,16 +644,16 @@ figure#parc_calanques {
   filter: brightness(1.2) contrast(1.2) opacity(0.8) saturate(1.2);
 }
 
-#fort_pomegues {
+/*#fort_pomegues {
   height: 100%;
-}
+}*/
 
-#fort_pomegues img {
-  width: 100%;
+/*#fort_pomegues img {
+ width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 40%;
-}
+}*/
 
 #iles_frioul {
   height: 100%;
@@ -686,13 +704,14 @@ figure#parc_calanques {
 }
 
 #activity a:nth-child(2) {
-  height: 40%;
+  /*height: 71%;*/
+  height: 100%;
 }
 
 #activity a:nth-child(3) {
   height: 25%;
-  position: relative;
-  bottom: 12.7%;
+  /* position: relative;
+  bottom: 12.7%;*/
 }
 
 #activity a:nth-child(5) {
