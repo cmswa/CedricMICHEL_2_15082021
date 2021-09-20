@@ -250,17 +250,16 @@ input::placeholder {
 #filtres ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 0;
-  margin-left: -12px;
+  padding-left: 5px;
 }
 
-#filtres li:nth-child(2) {
+/*#filtres li:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 #filtres li a {
   display: flex;
@@ -503,7 +502,7 @@ aside {
 aside h2 {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 1.4rem;
   margin-bottom: 0;
   margin-top: 40px;
@@ -571,7 +570,7 @@ aside .stars {
 }
 
 /**********************************************************
-          <div id="populaires">       <--  Activités 
+                        Activités 
 **********************************************************/
 
 #activity {
@@ -742,4 +741,101 @@ footer em {
 footer li {
   font-size: 1rem;
   padding: 7px;
+}
+
+/********************************************************** 
+        Responsive avec Media Queries     -      mobile
+***********************************************************/
+
+@media all and (max-device-width: 480px) {
+  #bloc_page,
+  footer {
+    width: auto;
+  }
+
+  #menu {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .nav:first-child {
+    order: 2;
+  }
+  .nav:nth-child(2) {
+    order: 3;
+  }
+  .nav:last-child {
+    order: 1;
+  }
+
+  #descriptif {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .bouton_recherche {
+    width: 50px;
+  }
+
+  #filtres {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  #infos {
+    flex-wrap: wrap;
+  }
+
+  #hebergements {
+    flex-direction: column;
+  }
+
+  #hebergements article {
+    width: auto;
+    order: 2;
+    background: none;
+  }
+
+  aside {
+    width: auto;
+    order: 1;
+    border-radius: 0;
+  }
+
+  #populaires {
+    padding: 0 2.5%;
+  }
+  aside ul {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2%;
+  }
+
+  aside li,
+  aside figure {
+    width: 100%;
+  }
+
+  aside li img {
+    width: 131px;
+    height: 131px;
+  }
+
+  aside p:nth-child(2) {
+    padding-left: ;
+    margin-top: ;
+  }
+
+  /*#filtres li:nth-child(3) {
+    position: relative;
+    bottom: 50px;
+    left: 21%;
+}*/
 }
