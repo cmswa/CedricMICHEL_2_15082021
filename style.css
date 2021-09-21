@@ -685,23 +685,19 @@ figure#parc_calanques {
 }
 
 #activity a:nth-child(2) {
-  height: 40%;
+  height: 50%;
 }
 
 #activity a:nth-child(3) {
-  height: 25%;
-  position: relative;
-  bottom: 12.7%;
+  height: 39%;
 }
 
 #activity a:nth-child(5) {
-  height: 30%;
+  height: 43%;
 }
 
 #activity a:last-child {
-  height: 35%;
-  position: relative;
-  bottom: 12.7%;
+  height: 48%;
 }
 
 #activity figcaption {
@@ -709,6 +705,21 @@ figure#parc_calanques {
   border-radius: 0 0 25px 25px;
   box-shadow: 0px 0px 20px 1px #d3d3d3;
   padding: 6%;
+}
+
+/*figure#vieux_port figcaption,
+figure#parc_calanques figcaption {
+  margin-bottom: -10%;
+}*/
+
+figure#fort_pomegues figcaption,
+#iles_frioul figcaption {
+  margin-top: -18%;
+}
+
+#notre_dame figcaption,
+#parc_longchamps figcaption {
+  margin-top: -18%;
 }
 
 /* max-width: 38%; /*width: 120px;
