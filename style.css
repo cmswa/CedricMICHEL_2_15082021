@@ -633,7 +633,8 @@ figure#parc_calanques {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 40%;
+  object-position: 50% /*40%*/ 53%;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #iles_frioul {
@@ -644,7 +645,8 @@ figure#parc_calanques {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 15%;
+  object-position: 50% 36% /*15%*/;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #notre_dame {
@@ -656,6 +658,7 @@ figure#parc_calanques {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #parc_longchamps {
@@ -667,6 +670,7 @@ figure#parc_calanques {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #activity figure {
@@ -689,7 +693,7 @@ figure#parc_calanques {
 }
 
 #activity a:nth-child(3) {
-  height: 39%;
+  height: 40.5% /*39%*/;
 }
 
 #activity a:nth-child(5) {
@@ -758,7 +762,7 @@ footer li {
         Responsive avec Media Queries     -      mobile
 ***********************************************************/
 
-@media all and (max-device-width: 480px) {
+@media all and (max-device-width: 375px /*480px*/) {
   #bloc_page,
   footer {
     width: auto;
@@ -790,7 +794,7 @@ footer li {
   }
 
   header h3 {
-    font-size: 3.1rem;
+    font-size: 2.7rem;
   }
 
   .nav:first-child {
@@ -818,12 +822,19 @@ footer li {
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 20%;
-    font-size: 3em;
+    font-size: 2.5em;
+    padding-left: 4%;
+  }
+
+  #zone_de_recherche {
+    padding-left: 4%;
+    margin-top: 22px;
   }
 
   .bouton_recherche {
-    width: 50px;
+    width: 100px;
     font-size: 0%;
+    border-radius: 30px;
   }
 
   .bouton_recherche::before {
@@ -833,20 +844,105 @@ footer li {
     padding-right: 3px;
     vertical-align: middle;
     font-weight: 900;
-    font-size: initial;
+    font-size: xx-large;
+    padding-top: 17%;
   }
 
+  form {
+    height: 100px;
+  }
+
+  .fa-map-marker-alt {
+    width: 100px;
+    border-radius: 30px 0 0 30px;
+    font-size: 2.5em;
+    padding: 28px 0 0 38px;
+    margin-right: -30px;
+  }
+
+  input {
+    width: 70%;
+    padding-top: 15px;
+    border-top: 3px solid #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  input::placeholder {
+    font-size: 2.5rem;
+  }
   #filtres {
+    height: 450px;
     width: auto;
     flex-wrap: wrap;
   }
 
-  #infos {
+  #filtres ul {
     flex-wrap: wrap;
+  }
+
+  #filtres li {
+    font-size: 2.5em;
+    margin-top: 3%;
+  }
+
+  #filtres li a {
+    border-top: 4px #f2f2f2 solid;
+    border-right: 4px #f2f2f2 solid;
+    border-bottom: 4px #f2f2f2 solid;
+    border-radius: 0 50px 50px 0;
+    padding: 20px 36px 20px 75px;
+    margin-left: 49px;
+  }
+
+  #filtres li:first-child {
+    padding-right: 65%;
+  }
+
+  #filtres li:nth-child(3) {
+    padding-right: 16%;
+  }
+
+  .fa-money-bill-wave,
+  .fa-child,
+  .fa-heart,
+  .fa-dog {
+    height: 100px;
+    width: 100px;
+  }
+
+  .fa-money-bill-wave:before,
+  .fa-child:before,
+  .fa-heart:before,
+  .fa-dog:before {
+    padding-top: 25px;
+  }
+
+  #infos {
+    align-items: flex-start;
+    height: 100px;
+    font-size: 2.7rem;
+    margin-top: 90px;
+  }
+
+  .fa-info {
+    height: 50px;
+    width: 63px;
+    font-size: 1.7rem;
+    border: 4.5px solid #f2f2f2;
+  }
+
+  .fa-info:before {
+    padding-top: 12px;
+  }
+
+  #logements {
+    padding-left: 3%;
   }
 
   #hebergements {
     flex-direction: column;
+    position: relative;
+    top: 635px;
   }
 
   #hebergements article {
@@ -856,14 +952,26 @@ footer li {
   }
 
   aside {
+    height: 1500px;
+    margin-right: -3.3%;
     width: auto;
     order: 1;
     border-radius: 0;
   }
 
   #populaires {
-    padding: 0 2.5%;
+    padding: 0 4.5%;
   }
+
+  aside h2 {
+    font-size: 3.5rem;
+    padding-top: 5%;
+  }
+
+  aside h2 img {
+    width: 50px;
+  }
+
   aside ul {
     width: 95%;
     height: 100%;
@@ -877,9 +985,37 @@ footer li {
     width: 100%;
   }
 
+  aside li {
+    border-radius: 50px;
+  }
+
   aside li img {
-    width: 131px;
-    height: 131px;
+    width: 350px;
+    height: 333px;
+    padding: 15px;
+    border-radius: 50px 0 0 50px;
+    position: initial;
+  }
+
+  aside li:nth-child(3) img {
+    width: 465px;
+  }
+
+  aside figure {
+    font-size: 3rem;
+  }
+
+  aside figcaption {
+    padding: 5% 10% 5% 5%;
+  }
+
+  aside p {
+    font-size: 2.5rem;
+    margin-top: -20%;
+  }
+
+  aside .stars {
+    font-size: 2.3rem;
   }
 
   /*aside p:nth-child(2) {
