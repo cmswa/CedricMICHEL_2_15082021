@@ -502,7 +502,7 @@ aside {
 aside h2 {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 1.4rem;
   margin-bottom: 0;
   margin-top: 40px;
@@ -966,6 +966,7 @@ footer li {
   aside h2 {
     font-size: 3.5rem;
     padding-top: 5%;
+    justify-content: space-between;
   }
 
   aside h2 img {
