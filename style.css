@@ -1029,16 +1029,20 @@ footer li {
     margin-top: ;
   }*/
 
+  #hebergements article h2 {
+    font-size: 3.4rem;
+  }
+
+  #hebergements article {
+    height: 2530px;
+  }
+
   #hebergements article ul {
     height: 100%;
   }
 
   #hebergements article li {
     width: 100%;
-  }
-
-  #hebergements article {
-    height: 1264px;
   }
 
   #hebergements article figure {
