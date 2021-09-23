@@ -532,15 +532,20 @@ margin-top: 7px;*/
   align-content: flex-start;
 }
 
+#hotel_le_soleil,
+#chambres,
+#hotel_bleu_blanc {
+  height: 100%;
+}
+
 aside figure {
   display: flex;
   margin: 0;
+  height: 100%;
 }
 
 aside li img {
   max-width: 38%; /*width: 120px;*/
-  height: 131px; /* <-- pour google chrome ou height: 135px; pour firefox */
-  position: relative;
   padding: 5px;
   border-radius: 25px 0 0 25px;
   object-fit: cover;
@@ -781,7 +786,6 @@ footer li {
   header img {
     width: 70%;
     height: auto;
-    
   }
 
   nav {
