@@ -878,6 +878,7 @@ footer li {
     /*border-top: 2px solid #f2f2f2;
     border-bottom: 2px solid #f2f2f2;*/
     margin-right: -4%;
+    box-sizing: border-box;
   }
 
   input::placeholder {
@@ -1089,6 +1090,17 @@ footer li {
     margin-top: -17%;
   }
 
+  #vieux_port img,
+  #parc_calanques img,
+  #parc_longchamps img {
+    object-position: initial;
+  }
+
+  #parc_calanques img,
+  #vieux_port img {
+    height: 70%;
+  }
+
   /****** footer ******/
   footer {
     height: 540px;
@@ -1096,3 +1108,12 @@ footer li {
     justify-content: center;
   }
 }
+
+/********************************************************** 
+ Responsive avec Media Queries  -   tablette
+***********************************************************/
+/******* header ******/
+@media all and (max-width: 1025px) {
+}
+
+/************************* <1200px ************************/
