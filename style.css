@@ -906,7 +906,8 @@ footer li {
   }
 
   #filtres li:first-child {
-    padding-right: 65%;
+    /*padding-right: 65%;*/
+    margin-right: 76%;
   }
 
   #filtres li:nth-child(2) {
@@ -1112,8 +1113,251 @@ footer li {
 /********************************************************** 
  Responsive avec Media Queries  -   tablette
 ***********************************************************/
-/******* header ******/
-@media all and (max-width: 1025px) {
+/******* header ******/ 
+@media all and (min-width: 376px) and (max-width: 1025px) {
+  #bloc_page,
+  footer {
+    width: auto;
+  }
+
+  #menu {
+    justify-content: space-around;
+    margin-bottom: 1%;
+  }
+
+  nav {
+    margin-right: 11%;
+  }
+
+  a.nav {
+    padding: 40px 11%;
+  }
+
+  header h2,
+  header h3 {
+    flex-wrap: wrap;
+    margin-top: initial;
+    padding-left: 3%;
+  }
+
+  #zone_de_recherche {
+    height: auto;
+  }
+
+  form {
+    margin-top: 2%;
+    padding-left: 3%;
+  }
+
+  #filtres {
+    height: auto;
+    padding-top: 0;
+  }
+
+  #filtres ul {
+    width: 60%;
+    flex-wrap: wrap;
+    padding-left: revert;
+    justify-content: initial;
+  }
+
+  #filtres li:first-child {
+    margin-right: 80%;
+  }
+
+  #filtres li {
+    padding: 2%;
+  }
+
+  #infos {
+    height: auto;
+    padding-left: 5%;
+  }
+
+  #hebergements {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  aside {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  aside h2 {
+    justify-content: initial;
+    margin-bottom: 1%;
+  }
+
+  .line {
+    position: relative;
+    left: 64%;
+  }
+
+  #populaires {
+    margin-left: 6%;
+  }
+
+  aside ul {
+    width: 100%;
+    height: 700px;
+    padding-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  aside li {
+    width: 90%;
+    height: 31%;
+  }
+
+  aside div,
+  aside a,
+  aside figure {
+    width: 100%;
+  }
+
+  aside li img,
+  aside li:nth-child(3) img {
+    max-width: initial;
+    width: 58%;
+  }
+
+  aside p {
+    padding-left: 64%;
+    margin-top: -13%;
+  }
+
+  aside .stars {
+    padding-left: 64%;
+  }
+
+  #hebergements article {
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  #hebergements article h2 {
+    margin-bottom: 3%;
+  }
+
+  #hebergements article ul {
+    height: 1032px;
+  }
+
+  #hebergements article li {
+    width: 45%;
+    height: 30.5%;
+  }
+
+  #hebergements article div,
+  #hebergements article div a {
+    height: 100%;
+  }
+
+  #hebergements article figure {
+    height: 100%;
+    justify-content: flex-start;
+    margin-bottom: -17%;
+    padding-left: 0.4%;
+    padding-top: 1.4%;
+  }
+
+  #hebergements article li img {
+    min-height: initial;
+    object-fit: cover;
+    height: 60%;
+  }
+
+  #hebergements article li figcaption {
+    padding: 5% 0 8px 15px;
+  }
+
+  #hebergements article ul p {
+    padding-bottom: 0.5%;
+  }
+
+  #hebergements article em {
+    padding-bottom: 5%;
+  }
+
+  #activity {
+    height: 1200px;
+    padding: 2%;
+    margin-bottom: -7%;
+  }
+
+  #activity_2 {
+    width: 100%;
+    height: 79%;
+  }
+
+  #activity a {
+    width: 48.3%;
+  }
+
+  #activity a:first-child,
+  #activity a:nth-child(4) {
+    height: 50%;
+  }
+
+  figure#vieux_port,
+  figure#parc_calanques {
+    height: 450px;
+    height: 100%;
+  }
+
+  #activity a:first-child {
+    order: 1;
+  }
+
+  #activity a:nth-child(2) {
+    height: 25%;
+    order: 3;
+  }
+
+  #activity a:nth-child(3) {
+    height: 20%;
+    order: 4;
+  }
+
+  #activity a:nth-child(5) {
+    height: 20%;
+    order: 5;
+  }
+
+  #activity a:last-child {
+    height: 24%;
+    order: 6;
+  }
+
+  #activity a:nth-child(2) {
+    order: 3;
+  }
+
+  #activity a:nth-child(3) {
+    order: 4;
+  }
+
+  #activity a:nth-child(4) {
+    height: 49%;
+    order: 2;
+  }
+
+  #notre_dame figcaption,
+  #parc_longchamps figcaption {
+    margin-top: -15%;
+  }
+
+  figure#fort_pomegues figcaption,
+  #iles_frioul figcaption {
+    margin-top: -15%;
+  }
+
+  figure#vieux_port figcaption {
+    margin-bottom: 5%;
+  }
 }
 
 /************************* <1200px ************************/
