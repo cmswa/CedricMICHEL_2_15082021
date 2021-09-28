@@ -1113,7 +1113,7 @@ footer li {
 /********************************************************** 
  Responsive avec Media Queries  -   tablette
 ***********************************************************/
-/******* header ******/ 
+/******* header ******/
 @media all and (min-width: 376px) and (max-width: 1025px) {
   #bloc_page,
   footer {
@@ -1215,6 +1215,10 @@ footer li {
   aside a,
   aside figure {
     width: 100%;
+  }
+
+  aside figcaption {
+    width: 29%;
   }
 
   aside li img,
@@ -1360,4 +1364,19 @@ footer li {
   }
 }
 
-/************************* <1200px ************************/
+/************************* <768px ************************/
+
+@media all and (min-width: 376px) and (max-width: 768px) {
+  aside figcaption {
+    margin-right: -4%;
+    width: 28%;
+  }
+
+  aside {
+    margin-bottom: 3%;
+  }
+
+  aside p {
+    margin-top: -17%;
+  }
+}
