@@ -1361,6 +1361,10 @@ footer li {
   figure#vieux_port figcaption {
     margin-bottom: 5%;
   }
+
+  footer {
+    height: auto;
+  }
 }
 
 /************************* <890px ************************/
@@ -1368,6 +1372,10 @@ footer li {
 @media all and (min-width: 768px) and (max-width: 890px) {
   #hebergements article figure {
     margin-bottom: -21%;
+  }
+
+  footer {
+    height: auto;
   }
 }
 
