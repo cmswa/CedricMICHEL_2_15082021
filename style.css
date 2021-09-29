@@ -274,8 +274,11 @@ input::placeholder {
 }
 
 #filtres li a:hover {
-  background: #f2f2f2;
+  background: #f2f2f2a3 /*#f2f2f2*/;
   filter: none;
+  border-top: 2px #deebff solid;
+  border-right: 2px #deebff solid;
+  border-bottom: 2px #deebff solid;
 }
 
 #filtres li:first-child {
@@ -764,10 +767,10 @@ footer li {
 }
 
 /********************************************************** 
-        Responsive avec Media Queries     -      mobile
+        Responsive avec Media Queries  -   <375px    mobile
 ***********************************************************/
 /******* header ******/
-@media all and (max-width: 375px /*480px*/) {
+@media all and (max-width: 375px) {
   #bloc_page,
   footer {
     width: auto;
@@ -1111,7 +1114,7 @@ footer li {
 }
 
 /********************************************************** 
- Responsive avec Media Queries  -   tablette
+ Responsive avec Media Queries  -   <1025px   tablette
 ***********************************************************/
 /******* header ******/
 @media all and (min-width: 376px) and (max-width: 1025px) {
@@ -1186,13 +1189,9 @@ footer li {
   }
 
   aside h2 {
-    justify-content: initial;
+    justify-content: space-between;
     margin-bottom: 1%;
-  }
-
-  .line {
-    position: relative;
-    left: 64%;
+    width: 86%;
   }
 
   #populaires {
@@ -1364,9 +1363,26 @@ footer li {
   }
 }
 
+/************************* <890px ************************/
+
+@media all and (min-width: 768px) and (max-width: 890px) {
+  #hebergements article figure {
+    margin-bottom: -21%;
+  }
+}
+
 /************************* <768px ************************/
 
-@media all and (min-width: 376px) and (max-width: 768px) {
+@media all and (min-width: 580px) and (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  a.nav {
+    padding: 4%;
+    margin-left: 7%;
+  }
+
   aside figcaption {
     margin-right: -4%;
     width: 28%;
@@ -1378,5 +1394,146 @@ footer li {
 
   aside p {
     margin-top: -17%;
+  }
+
+  #hebergements article figure {
+    margin-bottom: -25%;
+  }
+
+  footer {
+    height: auto;
+    justify-content: center;
+    margin-left: -5%;
+  }
+
+  .footer_p {
+    padding-right: initial;
+  }
+
+  /*footer em {
+    padding: 30px 0 0 6%;
+  }
+
+  footer ul {
+    padding-left: 3%;*/
+}
+
+/************************* <580px ************************/
+
+@media all and (min-width: 436px) and (max-width: 580px) {
+  header {
+    height: auto;
+  }
+
+  #menu {
+    justify-content: space-between;
+  }
+
+  #menu > nav:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  nav {
+    padding-right: 3%;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  a.nav {
+    padding: 3%;
+  }
+
+  header h2 {
+    padding-right: 3%;
+  }
+
+  #filtres li:first-child {
+    margin-bottom: 3%;
+  }
+
+  #filtres li {
+    padding: 3%;
+  }
+
+  #filtres li a {
+    width: 156px;
+  }
+
+  aside p {
+    padding-left: 65%;
+    margin-top: -24%;
+  }
+
+  aside .stars {
+    padding-left: 65%;
+  }
+
+  #hebergements article figure {
+    margin-bottom: -36%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .footer_p {
+    padding-right: initial;
+  }
+}
+
+/************************* <436px ************************/
+@media all and (min-width: 376px) and (max-width: 436px) {
+  header {
+    height: auto;
+  }
+
+  #menu {
+    height: auto;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 9% 0% 9% 39%;
+    margin-right: 0%;
+  }
+
+  a.nav {
+    padding: initial;
+  }
+
+  header h2 {
+    padding-right: 3%;
+  }
+
+  input {
+    width: 44%;
+  }
+
+  #filtres li a {
+    width: 156px;
+  }
+
+  aside p {
+    padding-left: 66%;
+    margin-top: -29%;
+  }
+
+  aside .stars {
+    padding-left: 66%;
+  }
+
+  #hebergements article figure {
+    margin-bottom: -43%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .footer_p {
+    padding-right: initial;
   }
 }
