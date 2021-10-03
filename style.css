@@ -67,11 +67,6 @@ body {
   overflow-x: hidden;
 }
 
-#bloc_page,
-footer {
-  overflow: hidden;
-}
-
 #bloc_page {
   width: 1350px;
   margin: auto;
@@ -784,6 +779,7 @@ footer li {
   #bloc_page,
   footer {
     width: auto;
+    overflow: hidden;
   }
 
   header {
@@ -1150,6 +1146,7 @@ footer li {
   #bloc_page,
   footer {
     width: auto;
+    overflow: hidden;
   }
 
   header {
