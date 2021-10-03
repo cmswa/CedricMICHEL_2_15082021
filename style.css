@@ -67,6 +67,11 @@ body {
   overflow-x: hidden;
 }
 
+#bloc_page,
+footer {
+  overflow: hidden;
+}
+
 #bloc_page {
   width: 1350px;
   margin: auto;
@@ -1073,7 +1078,7 @@ footer li {
 
   /******** acivités *******/
   #activity {
-    height: 1400px;
+    height: auto;
   }
 
   #activity h2 {
@@ -1490,7 +1495,7 @@ footer li {
 
   /******** acivités *******/
   #activity {
-    height: 1400px;
+    height: auto;
     margin-bottom: 9%;
   }
 
