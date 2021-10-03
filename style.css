@@ -777,6 +777,10 @@ footer li {
 ***********************************************************/
 /******* header ******/
 @media all and (max-width: 376px) {
+  body {
+    margin: 0;
+  }
+
   #bloc_page,
   footer {
     width: auto;
@@ -1139,6 +1143,10 @@ footer li {
 ***********************************************************/
 /******* header ******/
 @media all and (min-width: 376px) and (max-width: 415px) {
+  body {
+    margin: 0;
+  }
+
   #bloc_page,
   footer {
     width: auto;
