@@ -172,7 +172,7 @@ header h3 {
 .nav:hover {
   border-top: 2px solid #0065fc;
   position: relative;
-  bottom: 1px;
+  bottom: 0.5px;
   color: #0065fc;
 }
 
@@ -431,27 +431,36 @@ margin: auto;*/
 
 #hebergements article li {
   width: 29%;
-  height: 46%;
+  height: 44.7%;
   background: white;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   justify-content: space-around;
-
-  padding: 0 0 0 5px;
+  padding: 4px 0 0 4px;
   margin-top: 7px;
   box-shadow: 0px 0px 20px 3px #d3d3d3;
 }
 
+#auberge_cann,
+#hotel_port,
+#hotel_mouettes,
+#hotel_mer,
+#auberge_panier,
+#hotel_amica {
+  height: 100%;
+}
+
+#hebergements article a {
+  height: 100%;
+}
+
 #hebergements article figure {
-  height: 120px;
+  height: 64%;
   width: 98%;
   display: flex;
   margin: 0;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 12px;
 }
 
 #hebergements article li img {
@@ -464,21 +473,21 @@ margin: auto;*/
 }
 
 #hebergements article li figcaption {
-  padding: 8px 0 8px 15px;
+  padding: 4% 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
 }
 
 #hebergements article ul p {
   font-size: 0.9rem;
-  padding-left: 15px;
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin-top: 3.5%;
+  margin-bottom: 4%;
 }
 
 #hebergements article .stars {
-  padding-left: 15px;
   font-size: 0.8rem;
   display: flex;
-  padding-top: 5px;
 }
 
 #hebergements article em {
