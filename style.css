@@ -67,6 +67,11 @@ body {
   overflow-x: hidden;
 }
 
+#bloc_page,
+footer {
+  overflow: hidden;
+}
+
 #bloc_page {
   width: 1350px;
   margin: auto;
@@ -81,7 +86,7 @@ figcaption,
   font-style: normal;
   font-weight: normal;
 }
- 
+
 #filtres {
   font-family: "ralewaybold", serif;
   font-style: normal;
