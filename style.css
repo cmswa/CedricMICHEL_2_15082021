@@ -67,10 +67,10 @@ body {
   overflow-x: hidden;
 }
 
-#bloc_page,
+/*#bloc_page,
 footer {
   overflow: hidden;
-}
+}*/
 
 #bloc_page {
   width: 1350px;
