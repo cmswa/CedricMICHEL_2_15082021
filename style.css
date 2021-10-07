@@ -1651,6 +1651,7 @@ footer li {
   #bloc_page,
   footer {
     width: auto;
+    overflow: hidden;
   }
 
   #menu {
@@ -1663,7 +1664,7 @@ footer li {
   }
 
   a.nav {
-    padding: 40px 11%;
+    padding: 2.4rem 11%;
   }
 
   header h2,
